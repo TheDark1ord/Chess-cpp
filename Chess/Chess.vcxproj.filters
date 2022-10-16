@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\bin">
+      <UniqueIdentifier>{0849ce7e-f7b1-42ab-9d9e-bcdabebe69f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bin\x86">
+      <UniqueIdentifier>{6ff45c5b-f410-48d6-bad1-885d69f6a525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bin\x64">
+      <UniqueIdentifier>{a646eb03-8e51-4211-b041-e30d276cba68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bin\x86\release">
+      <UniqueIdentifier>{0c539b03-4acb-4cd2-aa4a-1f5711c47fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bin\x86\debug">
+      <UniqueIdentifier>{b2c340fe-fa0f-4f50-b5cb-38fdc6ae1bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bin\x64\debug">
+      <UniqueIdentifier>{af271b60-53b5-4edd-a14a-a6a65a9e79b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\bin\x64\release">
+      <UniqueIdentifier>{d98d4d0c-f10a-41cf-9baa-ff94f9edcd6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Sounds">
+      <UniqueIdentifier>{fbc8c431-a475-4abc-a3f1-afa884f9302d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Chess Pieces">
+      <UniqueIdentifier>{e7e50726-5fc1-4ddf-bdee-866d4bb5d255}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\C++ libs\nanosvg\src\nanosvg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\C++ libs\nanosvg\src\nanosvgrast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-network-d-2.dll">
+      <Filter>Resource Files\bin\x64\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-system-d-2.dll">
+      <Filter>Resource Files\bin\x64\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-window-d-2.dll">
+      <Filter>Resource Files\bin\x64\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-audio-d-2.dll">
+      <Filter>Resource Files\bin\x64\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-graphics-d-2.dll">
+      <Filter>Resource Files\bin\x64\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-audio-2.dll">
+      <Filter>Resource Files\bin\x64\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-graphics-2.dll">
+      <Filter>Resource Files\bin\x64\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-network-2.dll">
+      <Filter>Resource Files\bin\x64\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-system-2.dll">
+      <Filter>Resource Files\bin\x64\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\sfml-window-2.dll">
+      <Filter>Resource Files\bin\x64\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\openal32.dll">
+      <Filter>Resource Files\bin\x86</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x64\openal32.dll">
+      <Filter>Resource Files\bin\x64</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-window-2.dll">
+      <Filter>Resource Files\bin\x86\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-audio-2.dll">
+      <Filter>Resource Files\bin\x86\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-graphics-2.dll">
+      <Filter>Resource Files\bin\x86\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-network-2.dll">
+      <Filter>Resource Files\bin\x86\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-system-2.dll">
+      <Filter>Resource Files\bin\x86\release</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-window-d-2.dll">
+      <Filter>Resource Files\bin\x86\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-audio-d-2.dll">
+      <Filter>Resource Files\bin\x86\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-graphics-d-2.dll">
+      <Filter>Resource Files\bin\x86\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-network-d-2.dll">
+      <Filter>Resource Files\bin\x86\debug</Filter>
+    </None>
+    <None Include="..\..\..\..\..\C++ libs\SFML\bin-x86\sfml-system-d-2.dll">
+      <Filter>Resource Files\bin\x86\debug</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\bB.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\bK.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\bN.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\bP.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\bQ.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\bR.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\wB.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\wK.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\wN.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\wP.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\wQ.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+    <None Include="Resources\ChessPieces\wR.svg">
+      <Filter>Resource Files\Chess Pieces</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Sounds\Move-W.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\Capture-B.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\Capture-W.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\Castles-B.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\Castles-W.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\Check-B.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\Check-W.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\EndGame.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\Move-B.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
