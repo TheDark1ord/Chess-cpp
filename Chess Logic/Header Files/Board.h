@@ -82,7 +82,7 @@ public:
 private:
 	inline void placePiece(Piece piece, int pos);
 	inline void removePiece(Piece piece, int pos);
-	inline void movePiece(Piece piece, int from, int to);
+	void movePiece(Piece piece, int from, int to);
 
 	std::stack<Move> prev_moves;
 	std::stack<BoardState> prev_states;
@@ -124,6 +124,7 @@ private:
 	BitBoard w_piece_pos;
 	BitBoard b_piece_pos;
 	BitBoard all_piece_pos;
+
 	// Generate combined bitboards for white, black and all pieces
 	void generate_combined_bitboards();
 };

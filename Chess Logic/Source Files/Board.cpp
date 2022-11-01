@@ -54,6 +54,7 @@ bool ChessBoard::load_from_FEN(std::string FEN)
 		placePiece(Piece(char_to_piece[cur_char]), y * 8 + (7 - x));
 		x++;
 	}
+	generate_combined_bitboards();
 
 	active_color = splitted_string[1][0] == 'w' ? Color::WHITE : Color::BLACK;
 
@@ -125,13 +126,14 @@ void ChessBoard::placePiece(Piece piece, int pos)
 
 void ChessBoard::removePiece(Piece piece, int pos)
 { 
-	*piece_to_bitboard[piece] &= ~(1 << pos);
+	*piece_to_bitboard[piece] &= ~(1ull << pos);
 }
 
 void ChessBoard::movePiece(Piece piece, int from, int to)
 { 
 	removePiece(piece, from);
 	placePiece(piece, to);
+	generate_combined_bitboards();
 }
 
 void ChessBoard::generate_combined_bitboards()

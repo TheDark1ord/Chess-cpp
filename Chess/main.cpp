@@ -15,6 +15,9 @@ int selected_square = -1;
 void HandleEvent(sf::Event& ev, sf::RenderWindow* window);
 // Load svg file and load it into the target texture
 
+ChessBoard board(ChessBoard::default_pos);
+MoveGenerator generator(&board);
+
 sf::VertexArray square_pattern;
 std::vector<sf::Texture> piece_textures;
 std::vector<sf::Sprite> sprites;
@@ -45,8 +48,6 @@ int main()
 	ornament_shape.setTexture(&ornament_texture);
 	ornament_shape.setSize(sf::Vector2f(r::square_size, r::square_size));
 
-	ChessBoard board(ChessBoard::default_pos);
-	MoveGenerator generator(&board);
 	generator.generate_pawn_moves();
 
 	while (window->isOpen())
@@ -83,6 +84,13 @@ void HandleEvent(sf::Event& ev, sf::RenderWindow* window)
 				r::highlightSquare(&square_pattern, selected_square, (selected_square % 8 + selected_square / 8) % 2 ? r::green : r::light_yellow);
 			if (new_selected_square != selected_square)
 			{
+				// Try to make a move
+				if (generator.make_a_move(selected_square, new_selected_square))
+				{
+					selected_square = -1;
+					return;
+				}
+
 				r::highlightSquare(&square_pattern, new_selected_square, r::regular_yellow);
 				selected_square = new_selected_square;
 			} else

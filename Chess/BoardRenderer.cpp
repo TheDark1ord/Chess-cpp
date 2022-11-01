@@ -9,8 +9,8 @@
 
 namespace boardRender
 {
-	int Width = 1280;
-	int Height = 1280;
+	int Width = 1000;
+	int Height = 1000;
 
 	int square_size = std::min(Width / 8, Height / 8);
 	float x_offset = std::max(float(Width - Height) / 2, 0.0f);
@@ -279,8 +279,8 @@ namespace boardRender
 			std::vector<int> set_bits = get_set_bits(current_board);
 			for (int i : set_bits)
 			{
-				sprites[(uint64_t)int_piece - 1].setPosition(sf::Vector2f((i % 8) * square_size, (i / 8) * square_size));
-				render_target->draw(sprites[(uint64_t)int_piece - 1], render_states);
+				sprites[(uint64_t)int_piece].setPosition(sf::Vector2f((i % 8) * square_size, (i / 8) * square_size));
+				render_target->draw(sprites[(uint64_t)int_piece], render_states);
 			}
 		}
 	}
@@ -308,8 +308,8 @@ namespace boardRender
 
 		for (const Move& move : move_generator.get_moves(selected_square))
 		{
-			default_indicator.setPosition(sf::Vector2f((float(move.to % 8) + 0.5f) * square_size - default_indicator.getRadius(),
-										  ((float(move.to / 8) + 0.5f) * square_size - default_indicator.getRadius())));
+			default_indicator.setPosition(sf::Vector2f((float(move.to % 8) + 0.5f) * square_size - (float)default_indicator.getRadius() - default_indicator.getOutlineThickness(),
+										  ((float(move.to / 8) + 0.5f) * square_size - (float)default_indicator.getRadius() - default_indicator.getOutlineThickness())));
 			render_target->draw(default_indicator, render_states);
 		}
 	}

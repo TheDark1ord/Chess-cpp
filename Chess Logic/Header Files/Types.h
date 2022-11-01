@@ -15,6 +15,7 @@ enum struct MoveType
 	NONE,
 
 	NORMAL,
+	DOUBLE_MOVE,
 	CAPTURE,
 	CASTLING,
 	EN_PASSANT,
@@ -57,7 +58,7 @@ enum struct PieceType
 
 enum struct Piece : int
 {
-	NONE,
+	NONE = -1,
 
 	W_KING, B_KING,
 	W_QUEEN, B_QUEEN,

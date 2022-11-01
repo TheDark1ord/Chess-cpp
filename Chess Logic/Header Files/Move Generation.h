@@ -27,6 +27,8 @@ public:
 
 	// Get all the moves, avalible for a piece at that position
 	std::vector<Move> get_moves(int pos) const;
+	// Check if you can make this move
+	bool make_a_move(int from, int to);
 
 private:
 	ChessBoard* board;
